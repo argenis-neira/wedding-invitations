@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+
 .parallax {
   width: 10%;
 }
@@ -62,7 +64,7 @@
   height: 100%;
   background-image: url("https://spectacular-panda-f144bf.netlify.app/images/textura_sea.JPG");
   background-size: cover;
-  opacity: 0.05; /* Ajusta la opacidad según sea necesario */
+  opacity: 0.04; /* Ajusta la opacidad según sea necesario */
   z-index: -1; /* Coloca la superposición detrás del contenido, pero delante del video */
 }
 
@@ -96,7 +98,38 @@
 }
 .flip-clock__slot {
   font-size: 15px;
+  color: rgba(34, 127, 171);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  margin-top: 1rem;
+  font-family: "Alex Brush", cursive;
+  font-weight: 600;
+  font-style: normal;
 }
+.start-slot::after {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: 10em;
+  z-index: -1;
+  left: 0;
+  content: "";
+}
+.end-slot::after {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  height: 100%;
+  width: 10em;
+  z-index: -1;
+  right: 0;
+  content: "";
+}
+
 .card {
   display: block;
   position: relative;
@@ -110,28 +143,31 @@
 .card__back::after {
   display: block;
   height: 0.72em;
-  color: #ccc;
-  background: #222;
+  color: rgba(34, 127, 171);
+  background: #fff;
   padding: 0.25em 0.25em;
   border-radius: 0.15em 0.15em 0 0;
   transform-style: preserve-3d;
   width: 100%;
   transform: translateZ(0);
+  font-weight: 500; /* Light */
+  font-style: italic; /* Italic */
 }
 .card__bottom {
-  color: #fff;
   position: absolute;
   top: 50%;
   left: 0;
-  border-top: solid 1px #000;
-  background: #393939;
+  border-top: solid 1px #f0ebeb;
+  background: #fff;
   border-radius: 0 0 0.15em 0.15em;
   pointer-events: none;
+  width: 100%;
   overflow: hidden;
 }
 .card__bottom::after {
   display: block;
   margin-top: -0.72em;
+  width: 100%;
 }
 .card__back::before,
 .card__bottom::after {
@@ -199,7 +235,7 @@
     font-size: 50px;
   }
   .flip-clock__slot {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
@@ -215,9 +251,6 @@
 @media (min-width: 992px) {
   .parallax {
     width: 20%;
-  }
-  .card {
-    font-size: 65px;
   }
 }
 

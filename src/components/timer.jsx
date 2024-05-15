@@ -101,7 +101,7 @@ const Timer = () => {
               <b className="card__bottom" data-value=""></b>
             </b>
           </b>
-          <span className="flip-clock__slot">Days</span>
+          <span className="flip-clock__slot start-slot">Días</span>
         </span>
         <span id="Hours" className="flip-clock__piece flip">
           <b className="flip-clock__card card">
@@ -111,7 +111,7 @@ const Timer = () => {
               <b className="card__bottom" data-value=""></b>
             </b>
           </b>
-          <span className="flip-clock__slot">Hours</span>
+          <span className="flip-clock__slot">Horas</span>
         </span>
         <span id="Minutes" className="flip-clock__piece flip">
           <b className="flip-clock__card card">
@@ -121,7 +121,7 @@ const Timer = () => {
               <b className="card__bottom" data-value=""></b>
             </b>
           </b>
-          <span className="flip-clock__slot">Minutes</span>
+          <span className="flip-clock__slot">Minutos</span>
         </span>
         <span id="Seconds" className="flip-clock__piece flip">
           <b className="flip-clock__card card">
@@ -131,7 +131,7 @@ const Timer = () => {
               <b className="card__bottom" data-value=""></b>
             </b>
           </b>
-          <span className="flip-clock__slot">Seconds</span>
+          <span className="flip-clock__slot end-slot">Segundos</span>
         </span>
       </div>
     </>
