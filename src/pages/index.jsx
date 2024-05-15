@@ -3,6 +3,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Text from "../components/text";
 import Reproductor from "../components/player";
+import Timer from "../components/timer";
 import { useEffect } from "react";
 
 const Home = () => {
@@ -34,15 +35,66 @@ const Home = () => {
 
   return (
     <>
-      <Reproductor />
-
       <div className="parallax" style={flowerStyle}></div>
       <div className="parallax" style={{ ...flowerStyle, right: "0" }}></div>
+      <div className="background-video-first-loading">
+        <img
+          src="images/first-image-while-loading.JPG"
+          alt="Sea"
+          className="background-video-first-loading"
+          style={{ filter: "blur(5px)", scale: "1.05" }}
+        />
+      </div>
+      <video autoPlay muted loop className="background-video">
+        <source src="/videos/sea.mp4" type="video/mp4" />
+        Tu navegador no soporta la etiqueta de video.
+      </video>
+      <div className="video-textura-overlay"></div>
 
       <Container>
+        <Row style={{ paddingTop: "50px" }}>
+          <Reproductor />
+        </Row>
+
         <Row>
           <Col></Col>
-          <Col md={8} xs={6} style={{ paddingTop: "35px" }}>
+          <Col
+            md={6}
+            xs={10}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: "30px",
+            }}
+          >
+            <img
+              className="main-image"
+              src="/images/main-image.JPG"
+              alt="Wedding"
+            />
+          </Col>
+          <Col></Col>
+        </Row>
+
+        <Row>
+          <h1
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: "35px",
+            }}
+          >
+            26-10-2024
+          </h1>
+        </Row>
+
+        <Row>
+          <Timer />
+        </Row>
+
+        <Row>
+          <Col></Col>
+          <Col md={8} xs={10}>
             <Text />
           </Col>
           <Col></Col>
