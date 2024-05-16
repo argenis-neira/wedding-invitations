@@ -12,7 +12,7 @@ const Home = () => {
     backgroundImage: 'url("/images/flower.svg")',
     backgroundSize: "contain",
     position: "fixed",
-    height: "700px",
+    height: "100vh",
   };
 
   useEffect(() => {
@@ -49,7 +49,6 @@ const Home = () => {
         <source src="/videos/sea.mp4" type="video/mp4" />
         Tu navegador no soporta la etiqueta de video.
       </video>
-      <div className="video-textura-overlay"></div>
 
       <Container>
         <Row style={{ paddingTop: "50px" }}>
@@ -90,6 +89,79 @@ const Home = () => {
 
         <Row>
           <Timer />
+        </Row>
+
+        <Row>
+          <Col></Col>
+          <Col lg={8} md={8} sm={10} xs={10}>
+            <div className="main-text">
+              El amor te da esa oportunidad de elegir, de sentirte viva, te da
+              esa seguridad y unas ganas de estar juntos siempre, de ver a esa
+              persona como si fuera el primer día y el último día de tu vida
+            </div>
+          </Col>
+          <Col></Col>
+        </Row>
+
+        <Row>
+          <h1
+            className="title"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: "35px",
+            }}
+          >
+            Galería de fotos
+          </h1>
+        </Row>
+
+        <Row
+          className="g-3"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <Col
+            style={{ display: "flex", justifyContent: "center" }}
+            lg={5}
+            md={4}
+            // sm={4}
+            xs={8}
+          >
+            <img className="img-oval" alt="img_1" src="images/img_1.JPG" />
+          </Col>
+          <Col
+            style={{ display: "flex", justifyContent: "center" }}
+            lg={5}
+            md={4}
+            // sm={4}
+            xs={8}
+          >
+            <img className="img-rect" alt="img_2" src="images/img_2.JPG" />
+          </Col>
+        </Row>
+        <br />
+        <Row
+          className="g-3"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <Col
+            style={{ display: "flex", justifyContent: "center" }}
+            lg={5}
+            md={4}
+            // sm={4}
+            xs={8}
+          >
+            <img className="img-rect" alt="img_2" src="images/img_2.JPG" />
+          </Col>
+          <Col
+            style={{ display: "flex", justifyContent: "center" }}
+            lg={5}
+            md={4}
+            // sm={4}
+            xs={8}
+          >
+            <img className="img-oval" alt="img_1" src="images/img_1.JPG" />
+          </Col>
         </Row>
 
         <Row>

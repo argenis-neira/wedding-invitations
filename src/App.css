@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rouge+Script&family=Sacramento&display=swap");
 
 .parallax {
   width: 10%;
@@ -47,25 +47,13 @@
   transform: translate(-50%, -50%);
   background-size: cover;
   opacity: 0; /* Comienza oculto */
-  animation: fadeIn 2s ease-in-out forwards;
+  animation: fadeIn 3s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
   to {
     opacity: 1; /* Termina completamente visible */
   }
-}
-
-.video-textura-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("https://spectacular-panda-f144bf.netlify.app/images/textura_sea.JPG");
-  background-size: cover;
-  opacity: 0.04; /* Ajusta la opacidad según sea necesario */
-  z-index: -1; /* Coloca la superposición detrás del contenido, pero delante del video */
 }
 
 .main-image {
@@ -95,6 +83,7 @@
 .flip-clock__piece {
   display: inline-block;
   margin: 0 5px;
+  width: 60px;
 }
 .flip-clock__slot {
   font-size: 15px;
@@ -105,7 +94,7 @@
   width: 100%;
   position: relative;
   margin-top: 1rem;
-  font-family: "Alex Brush", cursive;
+  font-family: "Sacramento", cursive;
   font-weight: 600;
   font-style: normal;
 }
@@ -135,7 +124,7 @@
   position: relative;
   padding-bottom: 0.72em;
   line-height: 0.95;
-  font-size: 35px;
+  font-size: 25px;
 }
 .card__top,
 .card__bottom,
@@ -190,11 +179,13 @@
   animation: flipTop 0.3s cubic-bezier(0.37, 0.01, 0.94, 0.35);
   animation-fill-mode: both;
   transform-origin: center bottom;
+  width: 100%;
 }
 .flip .card__back .card__bottom {
   transform-origin: center top;
   animation-fill-mode: both;
   animation: flipBottom 0.6s cubic-bezier(0.15, 0.45, 0.28, 1);
+  width: 100%;
 }
 @keyframes flipTop {
   0% {
@@ -227,35 +218,84 @@
   }
 }
 
+.main-text {
+  color: black;
+  padding: 25px 25px;
+  border-radius: 5px;
+  font-size: 28px;
+  text-align: center;
+  background-color: rgba(239, 255, 255, 0.589);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8), -1px 0px 4px rgba(0, 0, 0, 0.4);
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title {
+  font-family: "Sacramento", cursive;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.img-oval {
+  border-radius: 50% / 50%; /* Hace que la imagen sea ovalada */
+  border: 5px solid white; /* Borde blanco */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera en los bordes */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien en el contenedor */
+  width: 100%;
+  height: 100%;
+}
+
+.img-rect {
+  border: 5px solid white; /* Borde blanco */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera en los bordes */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien en el contenedor */
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 576px) {
   .parallax {
     width: 15%;
   }
   .card {
-    font-size: 50px;
+    font-size: 40px;
+  }
+  .flip-clock__piece {
+    width: 90px;
   }
   .flip-clock__slot {
     font-size: 20px;
+  }
+  .main-text {
+    font-size: 30px;
   }
 }
 
 @media (min-width: 768px) {
   .parallax {
-    width: 20%;
+    width: 8%;
   }
   .card {
-    font-size: 50px;
+    font-size: 40px;
+  }
+  .title {
+    font-size: 80px;
   }
 }
 
 @media (min-width: 992px) {
   .parallax {
-    width: 20%;
+    width: 8%;
+  }
+  .main-text {
+    font-size: 40px;
   }
 }
 
 @media (min-width: 1200px) {
   .parallax {
-    width: 15%;
+    width: 10%;
   }
 }
