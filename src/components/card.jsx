@@ -1,10 +1,18 @@
 import Row from "react-bootstrap/Row";
 
-const Card = ({ iconFileName, title, buttonText, href, children }) => {
+const Card = ({
+  iconFileName,
+  title,
+  buttonText,
+  href,
+  isVisible,
+  children,
+}) => {
+  //la clase "box" es para identificar todo aquello que necesita animacion al hacer scroll
   return (
     <>
       <div
-        className="card-slot"
+        className={`card-slot box ${isVisible ? "visible" : "hidden"}`}
         style={{ display: "flex", flexDirection: "column" }}
       >
         <Row

@@ -3,7 +3,7 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Reproductor from "../components/player";
 import Timer from "../components/timer";
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 import Card from "../components/card";
 
 const Home = () => {
@@ -15,14 +15,30 @@ const Home = () => {
     height: "100vh",
   };
 
+  const [visibleBoxes, setVisibleBoxes] = useState([]);
+  const visibleBoxesRef = useRef([]);
+
   useEffect(() => {
     const handleScroll = () => {
+      //Paralax lento
       const scrollPosition = window.scrollY;
       const parallaxElements = document.querySelectorAll(".parallax");
 
       parallaxElements.forEach((element) => {
         const translateY = -scrollPosition / 10; // Ajusta la velocidad de paralaje según sea necesario
         element.style.backgroundPositionY = translateY + "px";
+      });
+
+      // Fading when scroll
+      const windowHeight = window.innerHeight;
+      const boxes = document.querySelectorAll(".box");
+
+      boxes.forEach((box, index) => {
+        const { top } = box.getBoundingClientRect();
+        if (top < windowHeight && !visibleBoxesRef.current.includes(index)) {
+          visibleBoxesRef.current = [...visibleBoxesRef.current, index];
+          setVisibleBoxes([...visibleBoxesRef.current]);
+        }
       });
     };
 
@@ -185,6 +201,7 @@ const Home = () => {
               title={"Ceremonia"}
               buttonText={"CÓMO LLEGAR"}
               href={"https://www.google.com.ec"}
+              isVisible={visibleBoxes.includes(0)}
             >
               26 de Octubre 2024 <br />
               15:00 <br /> Iglesia Católica Sagrado Corazón de Jesús
@@ -202,6 +219,7 @@ const Home = () => {
               title={"Recepción"}
               buttonText={"CÓMO LLEGAR"}
               href={"https://www.google.com.ec"}
+              isVisible={visibleBoxes.includes(1)}
             >
               26 de Octubre 2024 <br />
               18:30 <br /> VistaMar Centro de Eventos
@@ -223,6 +241,7 @@ const Home = () => {
               title={"Confirmación de asistencia"}
               buttonText={"CONFIRMA AQUÍ"}
               href={"https://www.google.com.ec"}
+              isVisible={visibleBoxes.includes(2)}
             >
               Para nosotros es muy importante que confirmes esta invitación, o
               que nos cuentes si no nos puedes acompañar
