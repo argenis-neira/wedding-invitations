@@ -1,6 +1,6 @@
 import Row from "react-bootstrap/Row";
 
-const Card = ({ iconFileName, title, children }) => {
+const Card = ({ iconFileName, title, buttonText, href, children }) => {
   return (
     <>
       <div
@@ -40,8 +40,8 @@ const Card = ({ iconFileName, title, children }) => {
             marginTop: "auto",
           }}
         >
-          <a href="https://www.google.com.ec" className="boton">
-            CÓMO LLEGAR
+          <a href={href} className="boton" target="_blank" rel="noreferrer">
+            {buttonText}
           </a>
         </Row>
       </div>

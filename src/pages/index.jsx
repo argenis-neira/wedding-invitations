@@ -128,7 +128,7 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <img className="img-oval" alt="img_1" src="images/img_1.JPG" />
+            <img className="img-oval" alt="img_1" src="images/1.jpg" />
           </Col>
           <Col
             className="order-2 order-md-2"
@@ -138,7 +138,7 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <img className="img-rect" alt="img_2" src="images/img_2.JPG" />
+            <img className="img-rect" alt="img_2" src="images/2.jpg" />
           </Col>
         </Row>
         <br />
@@ -154,7 +154,7 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <img className="img-rect" alt="img_2" src="images/img_2.JPG" />
+            <img className="img-rect" alt="img_2" src="images/3.jpg" />
           </Col>
           <Col
             className="order-3 order-md-4"
@@ -164,7 +164,7 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <img className="img-oval" alt="img_1" src="images/img_1.JPG" />
+            <img className="img-oval" alt="img_1" src="images/4.jpg" />
           </Col>
         </Row>
 
@@ -180,9 +180,15 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <Card iconFileName={"celebration"} title={"Recepción"}>
+            <Card
+              iconFileName={"iglesia"}
+              title={"Ceremonia"}
+              buttonText={"CÓMO LLEGAR"}
+              href={"https://www.google.com.ec"}
+            >
               26 de Octubre 2024 <br />
-              18:30 <br /> VistaMar Centro de Eventos Capaes, Ballenita
+              15:00 <br /> Iglesia Católica Sagrado Corazón de Jesús
+              <br /> La Entrada, Santa Elena
             </Card>
           </Col>
           <Col
@@ -191,10 +197,35 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <Card iconFileName={"iglesia"} title={"Ceremonia"}>
+            <Card
+              iconFileName={"celebration"}
+              title={"Recepción"}
+              buttonText={"CÓMO LLEGAR"}
+              href={"https://www.google.com.ec"}
+            >
               26 de Octubre 2024 <br />
-              15:00 <br /> Iglesia Católica Sagrado Corazón de Jesús La
-              Entrada, Santa Elena
+              18:30 <br /> VistaMar Centro de Eventos
+              <br />
+              Capaes, Ballenita
+            </Card>
+          </Col>
+        </Row>
+        <br />
+        <Row style={{ display: "flex", justifyContent: "center" }}>
+          <Col
+            lg={4}
+            md={4}
+            // sm={4}
+            xs={8}
+          >
+            <Card
+              iconFileName={"checklist"}
+              title={"Confirmación de asistencia"}
+              buttonText={"CONFIRMA AQUÍ"}
+              href={"https://www.google.com.ec"}
+            >
+              Para nosotros es muy importante que confirmes esta invitación, o
+              que nos cuentes si no nos puedes acompañar
             </Card>
           </Col>
         </Row>
