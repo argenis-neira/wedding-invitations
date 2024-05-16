@@ -1,10 +1,10 @@
 import Container from "react-bootstrap/Container";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Text from "../components/text";
 import Reproductor from "../components/player";
 import Timer from "../components/timer";
 import { useEffect } from "react";
+import Card from "../components/card";
 
 const Home = () => {
   let flowerStyle = {
@@ -121,6 +121,7 @@ const Home = () => {
           style={{ display: "flex", justifyContent: "center" }}
         >
           <Col
+            className="order-1 order-md-1"
             style={{ display: "flex", justifyContent: "center" }}
             lg={5}
             md={4}
@@ -130,6 +131,7 @@ const Home = () => {
             <img className="img-oval" alt="img_1" src="images/img_1.JPG" />
           </Col>
           <Col
+            className="order-2 order-md-2"
             style={{ display: "flex", justifyContent: "center" }}
             lg={5}
             md={4}
@@ -145,6 +147,7 @@ const Home = () => {
           style={{ display: "flex", justifyContent: "center" }}
         >
           <Col
+            className="order-4 order-md-3"
             style={{ display: "flex", justifyContent: "center" }}
             lg={5}
             md={4}
@@ -154,6 +157,7 @@ const Home = () => {
             <img className="img-rect" alt="img_2" src="images/img_2.JPG" />
           </Col>
           <Col
+            className="order-3 order-md-4"
             style={{ display: "flex", justifyContent: "center" }}
             lg={5}
             md={4}
@@ -164,13 +168,38 @@ const Home = () => {
           </Col>
         </Row>
 
-        <Row>
-          <Col></Col>
-          <Col md={8} xs={10}>
-            <Text />
+        <br />
+
+        <Row
+          className="gap-3"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <Col
+            lg={4}
+            md={4}
+            // sm={4}
+            xs={8}
+          >
+            <Card iconFileName={"celebration"} title={"Recepción"}>
+              26 de Octubre 2024 <br />
+              18:30 <br /> VistaMar Centro de Eventos Capaes, Ballenita
+            </Card>
           </Col>
-          <Col></Col>
+          <Col
+            lg={4}
+            md={4}
+            // sm={4}
+            xs={8}
+          >
+            <Card iconFileName={"iglesia"} title={"Ceremonia"}>
+              26 de Octubre 2024 <br />
+              15:00 <br /> Iglesia Católica Sagrado Corazón de Jesús La
+              Entrada, Santa Elena
+            </Card>
+          </Col>
         </Row>
+        <br />
+        <br />
       </Container>
     </>
   );
