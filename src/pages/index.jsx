@@ -200,7 +200,7 @@ const Home = () => {
               iconFileName={"iglesia"}
               title={"Ceremonia"}
               buttonText={"CÓMO LLEGAR"}
-              href={"https://www.google.com.ec"}
+              href={"https://maps.app.goo.gl/pmSspoRZph4RSjL77"}
               isVisible={visibleBoxes.includes(0)}
             >
               26 de Octubre 2024 <br />
@@ -218,7 +218,7 @@ const Home = () => {
               iconFileName={"celebration"}
               title={"Recepción"}
               buttonText={"CÓMO LLEGAR"}
-              href={"https://www.google.com.ec"}
+              href={"https://maps.app.goo.gl/WnysuqovptRbwgNRA"}
               isVisible={visibleBoxes.includes(1)}
             >
               26 de Octubre 2024 <br />

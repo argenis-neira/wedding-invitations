@@ -48,8 +48,16 @@ const Card = ({
             marginTop: "auto",
           }}
         >
-          <a href={href} className="boton" target="_blank" rel="noreferrer">
+          <a
+            className="button"
+            style={{ "--content": "'" + buttonText + "'" }}
+            href={href}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="left"></div>
             {buttonText}
+            <div className="right"></div>
           </a>
         </Row>
       </div>
