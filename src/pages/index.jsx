@@ -132,55 +132,57 @@ const Home = () => {
           </h1>
         </Row>
 
-        <Row
-          className="g-3"
-          style={{ display: "flex", justifyContent: "center" }}
-        >
+        <Row style={{ display: "flex", justifyContent: "center" }}>
           <Col
-            className="order-1 order-md-1"
+            className={`order-1 order-md-1 img-oval box ${
+              visibleBoxes.includes(0) ? "visible zoom-in" : "hidden"
+            }`}
             style={{ display: "flex", justifyContent: "center" }}
             lg={5}
             md={4}
             // sm={4}
             xs={8}
           >
-            <img className="img-oval" alt="img_1" src="images/1.jpg" />
+            <img alt="img_1" src="images/1.jpg" />
           </Col>
           <Col
-            className="order-2 order-md-2"
+            className={`order-2 order-md-2 img-rect box ${
+              visibleBoxes.includes(1) ? "visible zoom-in" : "hidden"
+            }`}
             style={{ display: "flex", justifyContent: "center" }}
             lg={5}
             md={4}
             // sm={4}
             xs={8}
           >
-            <img className="img-rect" alt="img_2" src="images/2.jpg" />
+            <img alt="img_2" src="images/2.jpg" />
           </Col>
         </Row>
         <br />
-        <Row
-          className="g-3"
-          style={{ display: "flex", justifyContent: "center" }}
-        >
+        <Row style={{ display: "flex", justifyContent: "center" }}>
           <Col
-            className="order-4 order-md-3"
+            className={`order-4 order-md-3 img-rect box ${
+              visibleBoxes.includes(2) ? "visible zoom-in" : "hidden"
+            }`}
             style={{ display: "flex", justifyContent: "center" }}
             lg={5}
             md={4}
             // sm={4}
             xs={8}
           >
-            <img className="img-rect" alt="img_2" src="images/3.jpg" />
+            <img alt="img_2" src="images/3.jpg" />
           </Col>
           <Col
-            className="order-3 order-md-4"
+            className={`order-3 order-md-4 img-oval box ${
+              visibleBoxes.includes(3) ? "visible zoom-in" : "hidden"
+            }`}
             style={{ display: "flex", justifyContent: "center" }}
             lg={5}
             md={4}
             // sm={4}
             xs={8}
           >
-            <img className="img-oval" alt="img_1" src="images/4.jpg" />
+            <img alt="img_1" src="images/4.jpg" />
           </Col>
         </Row>
 
@@ -201,7 +203,7 @@ const Home = () => {
               title={"Ceremonia"}
               buttonText={"CÓMO LLEGAR"}
               href={"https://maps.app.goo.gl/pmSspoRZph4RSjL77"}
-              isVisible={visibleBoxes.includes(0)}
+              isVisible={visibleBoxes.includes(4)}
             >
               26 de Octubre 2024 <br />
               15:00 <br /> Iglesia Católica Sagrado Corazón de Jesús
@@ -219,7 +221,7 @@ const Home = () => {
               title={"Recepción"}
               buttonText={"CÓMO LLEGAR"}
               href={"https://maps.app.goo.gl/WnysuqovptRbwgNRA"}
-              isVisible={visibleBoxes.includes(1)}
+              isVisible={visibleBoxes.includes(5)}
             >
               26 de Octubre 2024 <br />
               18:30 <br /> VistaMar Centro de Eventos
@@ -241,7 +243,7 @@ const Home = () => {
               title={"Confirmación de asistencia"}
               buttonText={"CONFIRMA AQUÍ"}
               href={"https://www.google.com.ec"}
-              isVisible={visibleBoxes.includes(2)}
+              isVisible={visibleBoxes.includes(6)}
             >
               Para nosotros es muy importante que confirmes esta invitación, o
               que nos cuentes si no nos puedes acompañar
