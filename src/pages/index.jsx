@@ -5,6 +5,7 @@ import Reproductor from "../components/player";
 import Timer from "../components/timer";
 import { useEffect, useState, useRef } from "react";
 import Card from "../components/card";
+import DressCard from "../components/dress-card";
 
 const Home = () => {
   let flowerStyle = {
@@ -61,7 +62,7 @@ const Home = () => {
           style={{ filter: "blur(5px)", scale: "1.05" }}
         />
       </div>
-      <video autoPlay muted loop className="background-video">
+      <video autoPlay muted loop playsInline className="background-video">
         <source src="/videos/sea.mp4" type="video/mp4" />
         Tu navegador no soporta la etiqueta de video.
       </video>
@@ -70,7 +71,6 @@ const Home = () => {
         <Row style={{ paddingTop: "50px" }}>
           <Reproductor />
         </Row>
-
         <Row>
           <Col></Col>
           <Col
@@ -84,13 +84,12 @@ const Home = () => {
           >
             <img
               className="main-image"
-              src="/images/main-image.JPG"
+              src="/images/main-image.jpg"
               alt="Wedding"
             />
           </Col>
           <Col></Col>
         </Row>
-
         <Row>
           <h1
             style={{
@@ -102,11 +101,9 @@ const Home = () => {
             26-10-2024
           </h1>
         </Row>
-
         <Row>
           <Timer />
         </Row>
-
         <Row>
           <Col></Col>
           <Col lg={8} md={8} sm={10} xs={10}>
@@ -118,7 +115,6 @@ const Home = () => {
           </Col>
           <Col></Col>
         </Row>
-
         <Row>
           <h1
             className="title"
@@ -131,7 +127,6 @@ const Home = () => {
             Galería de fotos
           </h1>
         </Row>
-
         <Row style={{ display: "flex", justifyContent: "center" }}>
           <Col
             className={`order-1 order-md-1 img-oval box ${
@@ -185,9 +180,7 @@ const Home = () => {
             <img alt="img_1" src="images/4.jpg" />
           </Col>
         </Row>
-
         <br />
-
         <Row
           className="gap-3"
           style={{ display: "flex", justifyContent: "center" }}
@@ -231,6 +224,45 @@ const Home = () => {
           </Col>
         </Row>
         <br />
+        <Row
+          className="gap-3"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
+          <Col
+            lg={4}
+            md={4}
+            // sm={4}
+            xs={8}
+          >
+            <Card
+              iconFileName={"gift-icon"}
+              title={""}
+              buttonText={"REGALO"}
+              href={""}
+              isVisible={visibleBoxes.includes(6)}
+              box={true}
+            >
+              Para nosotros lo más importante es poder compartir con vos nuestro
+              gran día. Y si deseas ayudarnos con la Luna de Miel podés hacerlo
+              a la siguiente cuenta
+            </Card>
+          </Col>
+          <Col
+            lg={4}
+            md={4}
+            // sm={4}
+            xs={8}
+          >
+            <DressCard
+              title="Dress Code"
+              isVisible={visibleBoxes.includes(7)}
+              iconFileName={"dress-code"}
+            >
+              ELEGANTE
+            </DressCard>
+          </Col>
+        </Row>
+        <br />
         <Row style={{ display: "flex", justifyContent: "center" }}>
           <Col
             lg={4}
@@ -242,8 +274,10 @@ const Home = () => {
               iconFileName={"checklist"}
               title={"Confirmación de asistencia"}
               buttonText={"CONFIRMA AQUÍ"}
-              href={"https://www.google.com.ec"}
-              isVisible={visibleBoxes.includes(6)}
+              href={
+                "https://docs.google.com/forms/d/e/1FAIpQLSctBffRDX1F3IsH9Ou5ragsUvXkn_r3FpC6qTRgy2zRy2Itzg/viewform"
+              }
+              isVisible={visibleBoxes.includes(8)}
             >
               Para nosotros es muy importante que confirmes esta invitación, o
               que nos cuentes si no nos puedes acompañar
@@ -251,8 +285,55 @@ const Home = () => {
           </Col>
         </Row>
         <br />
+        <Row>
+          <Col></Col>
+          <Col
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              textAlign: "center",
+            }}
+            className="card-title"
+            lg={8}
+            md={8}
+            sm={10}
+            xs={10}
+          >
+            Coincidir es un lujo pero conectar es un milagro
+          </Col>
+          <Col></Col>
+        </Row>
         <br />
+        <Row
+          style={{ display: "flex", justifyContent: "center" }}
+          className="card-title"
+        >
+          ¡Te esperamos!{" "}
+        </Row>{" "}
+        <br />
+        <Row>
+          <h1
+            className="title"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            Christian y Mafer
+          </h1>
+        </Row>
       </Container>
+      <br />
+      <div className="contact-section">
+        <Row style={{ width: "100%" }}>
+          <Col></Col>
+          <Col lg={8} md={8} sm={10} xs={10}>
+            Invitación digital creada por Carlos Neira{" "}
+          </Col>
+          <Col></Col>
+        </Row>
+      </div>
+      <br />
     </>
   );
 };

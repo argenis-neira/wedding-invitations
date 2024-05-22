@@ -1,4 +1,5 @@
 import Row from "react-bootstrap/Row";
+import { useState } from "react";
 
 const Card = ({
   iconFileName,
@@ -6,9 +7,19 @@ const Card = ({
   buttonText,
   href,
   isVisible,
+  box,
   children,
 }) => {
   //la clase "box" es para identificar todo aquello que necesita animacion al hacer scroll
+  const [openBox, setOpenBox] = useState(false);
+
+  const handleClick = (e) => {
+    if (box) {
+      e.preventDefault();
+      setOpenBox(true);
+    }
+  };
+
   return (
     <>
       <div
@@ -54,6 +65,7 @@ const Card = ({
             href={href}
             target="_blank"
             rel="noreferrer"
+            onClick={(e) => handleClick(e)}
           >
             <div className="left"></div>
             {buttonText}
@@ -61,6 +73,19 @@ const Card = ({
           </a>
         </Row>
       </div>
+      {openBox && (
+        <div className="popup">
+          <div className="popup-content">
+            <span className="close" onClick={() => setOpenBox(false)}>
+              &times;
+            </span>
+            <p>
+              Hola, aqui va la informacion bankaria <br /> 123456789 <br />{" "}
+              Banco del barrio
+            </p>
+          </div>
+        </div>
+      )}
     </>
   );
 };

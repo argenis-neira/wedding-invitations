@@ -18,7 +18,7 @@ const Reproductor = () => {
       <div className="reproductor">
         <audio
           ref={audioRef}
-          src="audios/Europa - Carlos Santana.mp3"
+          src="audios/main_audio.mp3"
           onEnded={() => setIsPlaying(false)}
         ></audio>
         <div className="reproductor__control">
