@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 const Reproductor = () => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -12,6 +12,19 @@ const Reproductor = () => {
     }
     setIsPlaying(!isPlaying);
   };
+
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden && isPlaying) {
+        audioRef.current.pause();
+        setIsPlaying(false);
+      }
+    };
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, [isPlaying]);
 
   return (
     <>

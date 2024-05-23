@@ -236,8 +236,8 @@ const Home = () => {
           >
             <Card
               iconFileName={"gift-icon"}
-              title={""}
-              buttonText={"REGALO"}
+              title={"Obsequio"}
+              buttonText={"VER DATOS"}
               href={""}
               isVisible={visibleBoxes.includes(6)}
               box={true}
@@ -325,7 +325,7 @@ const Home = () => {
       </Container>
       <br />
       <div className="contact-section">
-        <Row style={{ width: "100%" }}>
+        <Row style={{ "--bs-gutter-x": 0, width: "100%" }}>
           <Col></Col>
           <Col lg={8} md={8} sm={10} xs={10}>
             Invitación digital creada por Carlos Neira{" "}

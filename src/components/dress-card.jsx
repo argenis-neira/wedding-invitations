@@ -15,7 +15,7 @@ const DressCard = ({ iconFileName, title, isVisible, children }) => {
           }}
         >
           <img
-            style={{ width: "215px", height: "160px", paddingLeft: "35px" }}
+            style={{ width: "250px", height: "180px", paddingLeft: "35px" }}
             alt={title}
             src={`/images/${iconFileName}.png`}
           />
