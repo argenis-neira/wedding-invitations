@@ -71,6 +71,12 @@
   }
 }
 
+.main-gif {
+  width: 100%;
+  padding-top: 25px;
+  margin-left: -22px;
+}
+
 .flip-clock {
   text-align: center;
   perspective: 400px;

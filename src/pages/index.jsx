@@ -10,7 +10,6 @@ import DressCard from "../components/dress-card";
 const Home = () => {
   let flowerStyle = {
     backgroundRepeat: "repeat-y",
-    backgroundImage: 'url("/images/flower.svg")',
     backgroundSize: "contain",
     position: "fixed",
     height: "100vh",
@@ -52,8 +51,21 @@ const Home = () => {
 
   return (
     <>
-      <div className="parallax" style={flowerStyle}></div>
-      <div className="parallax" style={{ ...flowerStyle, right: "0" }}></div>
+      <div
+        className="parallax"
+        style={{
+          ...flowerStyle,
+          backgroundImage: 'url("/images/borde-izq.png")',
+        }}
+      ></div>
+      <div
+        className="parallax"
+        style={{
+          ...flowerStyle,
+          backgroundImage: 'url("/images/borde-der.png")',
+          right: "0",
+        }}
+      ></div>
       <div className="background-video-first-loading">
         <img
           src="images/first-image-while-loading.JPG"
@@ -91,15 +103,19 @@ const Home = () => {
           <Col></Col>
         </Row>
         <Row>
-          <h1
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              paddingTop: "35px",
-            }}
+          <Col></Col>
+          <Col
+            style={{ display: "flex", justifyContent: "center" }}
+            md={8}
+            xs={10}
           >
-            26-10-2024
-          </h1>
+            <img
+              className="main-gif"
+              src="/images/nombres-fecha.gif"
+              alt="Christian y Mafer"
+            />
+          </Col>
+          <Col></Col>
         </Row>
         <Row>
           <Timer />
