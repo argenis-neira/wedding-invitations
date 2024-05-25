@@ -55,7 +55,7 @@ const Reproductor = () => {
             </svg>
           </button>
         </div>
-        <div style={{ paddingTop: "25px" }}>Dale Play!</div>
+        <div style={{ paddingTop: "5px" }}>Dale Play!</div>
       </div>
     </>
   );

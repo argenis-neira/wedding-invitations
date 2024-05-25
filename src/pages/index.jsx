@@ -80,8 +80,23 @@ const Home = () => {
       </video>
 
       <Container>
-        <Row style={{ paddingTop: "50px" }}>
+        <Row style={{ paddingTop: "10px" }}>
           <Reproductor />
+        </Row>
+        <Row>
+          <Col></Col>
+          <Col
+            style={{ display: "flex", justifyContent: "center" }}
+            md={5}
+            xs={10}
+          >
+            <img
+              className="main-gif"
+              src="/images/nombres-fecha.gif"
+              alt="Christian y Mafer"
+            />
+          </Col>
+          <Col></Col>
         </Row>
         <Row>
           <Col></Col>
@@ -102,24 +117,7 @@ const Home = () => {
           </Col>
           <Col></Col>
         </Row>
-        <Row>
-          <Col></Col>
-          <Col
-            style={{ display: "flex", justifyContent: "center" }}
-            md={8}
-            xs={10}
-          >
-            <img
-              className="main-gif"
-              src="/images/nombres-fecha.gif"
-              alt="Christian y Mafer"
-            />
-          </Col>
-          <Col></Col>
-        </Row>
-        <Row>
-          <Timer />
-        </Row>
+        <br />
         <Row>
           <Col></Col>
           <Col lg={8} md={8} sm={10} xs={10}>
@@ -131,21 +129,21 @@ const Home = () => {
           </Col>
           <Col></Col>
         </Row>
+        <br />
         <Row>
           <h1
             className="title"
             style={{
               display: "flex",
               justifyContent: "center",
-              paddingTop: "35px",
             }}
           >
-            Galería de fotos
+            Con la bendición de Dios y de nuestros padres,
           </h1>
         </Row>
         <Row style={{ display: "flex", justifyContent: "center" }}>
           <Col
-            className={`order-1 order-md-1 img-oval box ${
+            className={`order-1 order-md-1 img-rect box ${
               visibleBoxes.includes(0) ? "visible zoom-in" : "hidden"
             }`}
             style={{ display: "flex", justifyContent: "center" }}
@@ -154,8 +152,9 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <img alt="img_1" src="images/1.jpg" />
+            <img alt="Padres Christian" src="images/padres-2.JPG" />
           </Col>
+          <div className="box-info">adlkja dlkafjoie asiojf4ealdfaklj </div>
           <Col
             className={`order-2 order-md-2 img-rect box ${
               visibleBoxes.includes(1) ? "visible zoom-in" : "hidden"
@@ -166,35 +165,41 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <img alt="img_2" src="images/2.jpg" />
+            <img alt="Padres Mafer" src="images/padres-1.JPG" />
           </Col>
+        </Row>{" "}
+        <Row>
+          <Col></Col>
+          <Col
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              textAlign: "center",
+            }}
+            className="card-title"
+            lg={8}
+            md={8}
+            sm={10}
+            xs={10}
+          >
+            Tenemos el agrado de invitarte a nuestra boda.
+          </Col>
+          <Col></Col>
         </Row>
         <br />
-        <Row style={{ display: "flex", justifyContent: "center" }}>
-          <Col
-            className={`order-4 order-md-3 img-rect box ${
-              visibleBoxes.includes(2) ? "visible zoom-in" : "hidden"
-            }`}
-            style={{ display: "flex", justifyContent: "center" }}
-            lg={5}
-            md={4}
-            // sm={4}
-            xs={8}
+        <Row>
+          <h1
+            className="title"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
           >
-            <img alt="img_2" src="images/3.jpg" />
-          </Col>
-          <Col
-            className={`order-3 order-md-4 img-oval box ${
-              visibleBoxes.includes(3) ? "visible zoom-in" : "hidden"
-            }`}
-            style={{ display: "flex", justifyContent: "center" }}
-            lg={5}
-            md={4}
-            // sm={4}
-            xs={8}
-          >
-            <img alt="img_1" src="images/4.jpg" />
-          </Col>
+            ¡Cada vez falta menos para el gran “Sí, Acepto”!
+          </h1>
+        </Row>
+        <Row>
+          <Timer />
         </Row>
         <br />
         <Row
@@ -320,23 +325,65 @@ const Home = () => {
           <Col></Col>
         </Row>
         <br />
+        <Row style={{ display: "flex", justifyContent: "center" }}>
+          <Col
+            className={`order-1 order-md-1 img-oval box ${
+              visibleBoxes.includes(0) ? "visible zoom-in" : "hidden"
+            }`}
+            style={{ display: "flex", justifyContent: "center" }}
+            lg={5}
+            md={4}
+            // sm={4}
+            xs={8}
+          >
+            <img alt="img_1" src="images/1.jpg" />
+          </Col>
+          <Col
+            className={`order-2 order-md-2 img-rect box ${
+              visibleBoxes.includes(1) ? "visible zoom-in" : "hidden"
+            }`}
+            style={{ display: "flex", justifyContent: "center" }}
+            lg={5}
+            md={4}
+            // sm={4}
+            xs={8}
+          >
+            <img alt="img_2" src="images/2.jpg" />
+          </Col>
+        </Row>
+        <br />
+        <Row style={{ display: "flex", justifyContent: "center" }}>
+          <Col
+            className={`order-4 order-md-3 img-rect box ${
+              visibleBoxes.includes(2) ? "visible zoom-in" : "hidden"
+            }`}
+            style={{ display: "flex", justifyContent: "center" }}
+            lg={5}
+            md={4}
+            // sm={4}
+            xs={8}
+          >
+            <img alt="img_2" src="images/3.jpg" />
+          </Col>
+          <Col
+            className={`order-3 order-md-4 img-oval box ${
+              visibleBoxes.includes(3) ? "visible zoom-in" : "hidden"
+            }`}
+            style={{ display: "flex", justifyContent: "center" }}
+            lg={5}
+            md={4}
+            // sm={4}
+            xs={8}
+          >
+            <img alt="img_1" src="images/4.jpg" />
+          </Col>
+        </Row>
+        <br />
         <Row
           style={{ display: "flex", justifyContent: "center" }}
           className="card-title"
         >
-          ¡Te esperamos!{" "}
-        </Row>{" "}
-        <br />
-        <Row>
-          <h1
-            className="title"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            Christian y Mafer
-          </h1>
+          ¡Te esperamos!
         </Row>
       </Container>
       <br />
