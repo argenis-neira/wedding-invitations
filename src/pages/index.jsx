@@ -154,9 +154,9 @@ const Home = () => {
           >
             <img alt="Padres Christian" src="images/padres-2.JPG" />
           </Col>
-          <div className="box-info">adlkja dlkafjoie asiojf4ealdfaklj </div>
+
           <Col
-            className={`order-2 order-md-2 img-rect box ${
+            className={`order-3 order-md-2 img-rect box ${
               visibleBoxes.includes(1) ? "visible zoom-in" : "hidden"
             }`}
             style={{ display: "flex", justifyContent: "center" }}
@@ -167,7 +167,50 @@ const Home = () => {
           >
             <img alt="Padres Mafer" src="images/padres-1.JPG" />
           </Col>
-        </Row>{" "}
+
+          <Col
+            className={`order-2 order-md-3 box ${
+              visibleBoxes.includes(2) ? "visible zoom-in" : "hidden"
+            }`}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              padding: "0 1em",
+            }}
+            lg={5}
+            md={4}
+            // sm={4}
+            xs={8}
+          >
+            {" "}
+            <div className="box-info">
+              Jorge Armangel Aguilar Crespo <br />&<br />
+              Enriqueta Cecilia Coronel
+            </div>
+          </Col>
+          <Col
+            className={`order-4 order-md-4 box ${
+              visibleBoxes.includes(3) ? "visible zoom-in" : "hidden"
+            }`}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              padding: "0 1em",
+            }}
+            lg={5}
+            md={4}
+            // sm={4}
+            xs={8}
+          >
+            <div className="box-info">
+              Alfredo Yasig Curicho
+              <br />
+              &<br />
+              Patricia Janett Tulcanaza Franco
+            </div>
+          </Col>
+        </Row>
+        <br />
         <Row>
           <Col></Col>
           <Col
@@ -208,7 +251,7 @@ const Home = () => {
         >
           <Col
             lg={4}
-            md={4}
+            md={5}
             // sm={4}
             xs={8}
           >
@@ -226,7 +269,7 @@ const Home = () => {
           </Col>
           <Col
             lg={4}
-            md={4}
+            md={5}
             // sm={4}
             xs={8}
           >
@@ -251,7 +294,7 @@ const Home = () => {
         >
           <Col
             lg={4}
-            md={4}
+            md={5}
             // sm={4}
             xs={8}
           >
@@ -262,6 +305,12 @@ const Home = () => {
               href={""}
               isVisible={visibleBoxes.includes(6)}
               box={true}
+              popUpCont={
+                <p>
+                  Hola, aqui va la informacion bankaria <br /> 123456789 <br />{" "}
+                  Banco del barrio
+                </p>
+              }
             >
               Para nosotros lo más importante es poder compartir con vos nuestro
               gran día. Y si deseas ayudarnos con la Luna de Miel podés hacerlo
@@ -270,7 +319,7 @@ const Home = () => {
           </Col>
           <Col
             lg={4}
-            md={4}
+            md={5}
             // sm={4}
             xs={8}
           >
@@ -284,10 +333,13 @@ const Home = () => {
           </Col>
         </Row>
         <br />
-        <Row style={{ display: "flex", justifyContent: "center" }}>
+        <Row
+          className="gap-3"
+          style={{ display: "flex", justifyContent: "center" }}
+        >
           <Col
             lg={4}
-            md={4}
+            md={5}
             // sm={4}
             xs={8}
           >
@@ -302,6 +354,31 @@ const Home = () => {
             >
               Para nosotros es muy importante que confirmes esta invitación, o
               que nos cuentes si no nos puedes acompañar
+            </Card>
+          </Col>
+          <Col
+            lg={4}
+            md={5}
+            // sm={4}
+            xs={8}
+          >
+            <Card
+              iconFileName={"schedule-icon"}
+              title={"¡No te pierdas ningún momento especial!"}
+              buttonText={"VER ITINERARIO"}
+              href={""}
+              isVisible={visibleBoxes.includes(9)}
+              box={true}
+              popUpCont={
+                <img
+                  style={{ height: "100%", width: "100%" }}
+                  alt="Itinerario"
+                  src="/images/itinerario.jpg"
+                />
+              }
+            >
+              Descubre el itinerario de momentos memorables que hemos preparado
+              para ti durante nuestra celebración nupcial
             </Card>
           </Col>
         </Row>
@@ -328,7 +405,7 @@ const Home = () => {
         <Row style={{ display: "flex", justifyContent: "center" }}>
           <Col
             className={`order-1 order-md-1 img-oval box ${
-              visibleBoxes.includes(0) ? "visible zoom-in" : "hidden"
+              visibleBoxes.includes(10) ? "visible zoom-in" : "hidden"
             }`}
             style={{ display: "flex", justifyContent: "center" }}
             lg={5}
@@ -340,7 +417,7 @@ const Home = () => {
           </Col>
           <Col
             className={`order-2 order-md-2 img-rect box ${
-              visibleBoxes.includes(1) ? "visible zoom-in" : "hidden"
+              visibleBoxes.includes(11) ? "visible zoom-in" : "hidden"
             }`}
             style={{ display: "flex", justifyContent: "center" }}
             lg={5}
@@ -355,7 +432,7 @@ const Home = () => {
         <Row style={{ display: "flex", justifyContent: "center" }}>
           <Col
             className={`order-4 order-md-3 img-rect box ${
-              visibleBoxes.includes(2) ? "visible zoom-in" : "hidden"
+              visibleBoxes.includes(12) ? "visible zoom-in" : "hidden"
             }`}
             style={{ display: "flex", justifyContent: "center" }}
             lg={5}
@@ -367,7 +444,7 @@ const Home = () => {
           </Col>
           <Col
             className={`order-3 order-md-4 img-oval box ${
-              visibleBoxes.includes(3) ? "visible zoom-in" : "hidden"
+              visibleBoxes.includes(13) ? "visible zoom-in" : "hidden"
             }`}
             style={{ display: "flex", justifyContent: "center" }}
             lg={5}

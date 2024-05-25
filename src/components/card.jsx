@@ -1,4 +1,5 @@
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 import { useState } from "react";
 
 const Card = ({
@@ -8,6 +9,7 @@ const Card = ({
   href,
   isVisible,
   box,
+  popUpCont,
   children,
 }) => {
   //la clase "box" es para identificar todo aquello que necesita animacion al hacer scroll
@@ -74,17 +76,31 @@ const Card = ({
         </Row>
       </div>
       {openBox && (
-        <div className="popup">
-          <div className="popup-content">
-            <span className="close" onClick={() => setOpenBox(false)}>
-              &times;
-            </span>
-            <p>
-              Hola, aqui va la informacion bankaria <br /> 123456789 <br />{" "}
-              Banco del barrio
-            </p>
-          </div>
-        </div>
+        // <div className="popup">
+        //   <div className="popup-content">
+        //     <span className="close" onClick={() => setOpenBox(false)}>
+        //       &times;
+        //     </span>
+        //     {popUpCont}
+        //   </div>
+        // </div>
+        <Row className="popup">
+          <Col></Col>
+          <Col
+            lg={5}
+            md={6}
+            // sm={4}
+            xs={10}
+          >
+            <div className="popup-content">
+              <span className="close" onClick={() => setOpenBox(false)}>
+                &times;
+              </span>
+              {popUpCont}
+            </div>
+          </Col>
+          <Col></Col>
+        </Row>
       )}
     </>
   );
