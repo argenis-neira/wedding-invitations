@@ -147,7 +147,7 @@ const Home = () => {
               visibleBoxes.includes(0) ? "visible zoom-in" : "hidden"
             }`}
             style={{ display: "flex", justifyContent: "center" }}
-            lg={5}
+            lg={4}
             md={4}
             // sm={4}
             xs={8}
@@ -160,7 +160,7 @@ const Home = () => {
               visibleBoxes.includes(1) ? "visible zoom-in" : "hidden"
             }`}
             style={{ display: "flex", justifyContent: "center" }}
-            lg={5}
+            lg={4}
             md={4}
             // sm={4}
             xs={8}
@@ -177,7 +177,7 @@ const Home = () => {
               justifyContent: "center",
               padding: "0 1em",
             }}
-            lg={5}
+            lg={4}
             md={4}
             // sm={4}
             xs={8}
@@ -185,7 +185,7 @@ const Home = () => {
             {" "}
             <div className="box-info">
               Jorge Armangel Aguilar Crespo <br />&<br />
-              Enriqueta Cecilia Coronel
+              Enriqueta Cecilia Coronel Sarmiento
             </div>
           </Col>
           <Col
@@ -197,7 +197,7 @@ const Home = () => {
               justifyContent: "center",
               padding: "0 1em",
             }}
-            lg={5}
+            lg={4}
             md={4}
             // sm={4}
             xs={8}
@@ -226,6 +226,25 @@ const Home = () => {
             xs={10}
           >
             Tenemos el agrado de invitarte a nuestra boda.
+          </Col>
+          <Col></Col>
+        </Row>
+        <Row>
+          <Col></Col>
+          <Col
+            md={6}
+            xs={10}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: "30px",
+            }}
+          >
+            <img
+              className="main-image"
+              src="/images/boda-familia.png"
+              alt="Family Wedding"
+            />
           </Col>
           <Col></Col>
         </Row>
@@ -324,7 +343,7 @@ const Home = () => {
             xs={8}
           >
             <DressCard
-              title="Dress Code"
+              title="Código de Vestimenta"
               isVisible={visibleBoxes.includes(7)}
               iconFileName={"dress-code"}
             >
@@ -364,7 +383,7 @@ const Home = () => {
           >
             <Card
               iconFileName={"schedule-icon"}
-              title={"¡No te pierdas ningún momento especial!"}
+              title={"¡No te pierdas nada!"}
               buttonText={"VER ITINERARIO"}
               href={""}
               isVisible={visibleBoxes.includes(9)}
