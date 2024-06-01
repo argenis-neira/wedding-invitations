@@ -175,15 +175,14 @@ const Home = () => {
             style={{
               display: "flex",
               justifyContent: "center",
-              padding: "0 1em",
             }}
-            lg={4}
-            md={4}
+            lg={6}
+            md={6}
             // sm={4}
-            xs={8}
+            xs={12}
           >
             {" "}
-            <div className="box-info">
+            <div className="box-info izq">
               Jorge Armangel Aguilar Crespo <br />&<br />
               Enriqueta Cecilia Coronel Sarmiento
             </div>
@@ -195,14 +194,13 @@ const Home = () => {
             style={{
               display: "flex",
               justifyContent: "center",
-              padding: "0 1em",
             }}
-            lg={4}
-            md={4}
+            lg={6}
+            md={6}
             // sm={4}
-            xs={8}
+            xs={12}
           >
-            <div className="box-info">
+            <div className="box-info der">
               Alfredo Yasig Curicho
               <br />
               &<br />
@@ -212,22 +210,15 @@ const Home = () => {
         </Row>
         <br />
         <Row>
-          <Col></Col>
-          <Col
+          <h1
+            className="title"
             style={{
               display: "flex",
               justifyContent: "center",
-              textAlign: "center",
             }}
-            className="card-title"
-            lg={8}
-            md={8}
-            sm={10}
-            xs={10}
           >
             Tenemos el agrado de invitarte a nuestra boda.
-          </Col>
-          <Col></Col>
+          </h1>
         </Row>
         <Row>
           <Col></Col>
@@ -392,7 +383,7 @@ const Home = () => {
                 <img
                   style={{ height: "100%", width: "100%" }}
                   alt="Itinerario"
-                  src="/images/itinerario.jpg"
+                  src="/images/itinerario.png"
                 />
               }
             >
@@ -410,7 +401,7 @@ const Home = () => {
               justifyContent: "center",
               textAlign: "center",
             }}
-            className="card-title"
+            className="title"
             lg={8}
             md={8}
             sm={10}
@@ -477,7 +468,7 @@ const Home = () => {
         <br />
         <Row
           style={{ display: "flex", justifyContent: "center" }}
-          className="card-title"
+          className="title"
         >
           ¡Te esperamos!
         </Row>

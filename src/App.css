@@ -294,8 +294,11 @@
   box-shadow: 0px 0px 0px 2px rgba(253, 217, 203, 1),
     8px 8px 0px 0px rgba(253, 217, 203, 1);
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
   width: 100%;
+  padding: 0.5em 0.5em;
+  margin: 1rem 5rem;
+  min-width: 15rem;
 
   color: #605e5e;
   background: linear-gradient(
@@ -549,6 +552,14 @@
   .box-info {
     font-size: 20px;
   }
+  .box-info.izq {
+    margin-right: 1rem;
+    margin-left: 6rem;
+  }
+  .box-info.der {
+    margin-left: 1rem;
+    margin-right: 6rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -558,10 +569,22 @@
   .main-text {
     font-size: 40px;
   }
+  .box-info.izq {
+    margin-left: 8rem;
+  }
+  .box-info.der {
+    margin-right: 8rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .parallax {
     width: 10%;
+  }
+  .box-info.izq {
+    margin-left: 11rem;
+  }
+  .box-info.der {
+    margin-right: 11rem;
   }
 }
