@@ -299,6 +299,7 @@
   padding: 0.5em 0.5em;
   margin: 1rem 5rem;
   min-width: 15rem;
+  /* max-width: 25rem; */
 
   color: #605e5e;
   background: linear-gradient(
@@ -582,9 +583,9 @@
     width: 10%;
   }
   .box-info.izq {
-    margin-left: 11rem;
+    margin-left: 12rem;
   }
   .box-info.der {
-    margin-right: 11rem;
+    margin-right: 12rem;
   }
 }
