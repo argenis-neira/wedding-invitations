@@ -380,11 +380,33 @@ const Home = () => {
               isVisible={visibleBoxes.includes(9)}
               box={true}
               popUpCont={
-                <img
-                  style={{ height: "100%", width: "100%" }}
-                  alt="Itinerario"
-                  src="/images/itinerario.png"
-                />
+                <>
+                  <img
+                    style={{ height: "100%", width: "100%" }}
+                    alt="Itinerario"
+                    src="/images/itinerario.png"
+                  />
+                  <Row
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      marginTop: "0.5rem",
+                      marginLeft: "3.5rem",
+                      marginRight: "3.5rem",
+                    }}
+                  >
+                    <a
+                      className="button"
+                      style={{ "--content": "'Descargar'" }}
+                      href="https://invitacionesdigitalesan.netlify.app/images/Itinerario-Boda.jpg"
+                      download="Itinerario-Boda-Aguilar-Pacheco.jpg"
+                    >
+                      <div className="left"></div>
+                      {"Descargar"}
+                      <div className="right"></div>
+                    </a>
+                  </Row>
+                </>
               }
             >
               Descubre el itinerario de momentos memorables que hemos preparado
