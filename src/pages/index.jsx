@@ -274,7 +274,7 @@ const Home = () => {
             >
               26 de Octubre 2024 <br />
               15:00 <br /> Iglesia Católica Sagrado Corazón de Jesús
-              <br /> La Entrada, Santa Elena
+              <br /> La Entrada, Santa Elena
             </Card>
           </Col>
           <Col
@@ -293,7 +293,7 @@ const Home = () => {
               26 de Octubre 2024 <br />
               18:30 <br /> VistaMar Centro de Eventos
               <br />
-              Capaes, Ballenita
+              Capaes, Ballenita
             </Card>
           </Col>
         </Row>
@@ -317,14 +317,16 @@ const Home = () => {
               box={true}
               popUpCont={
                 <p>
-                  Hola, aqui va la informacion bankaria <br /> 123456789 <br />{" "}
-                  Banco del barrio
+                  ¡Gracias por su amor y apoyo!
+                  <br /> Y los detalles de la Cuenta que aun no hay jaja <br />{" "}
+                  123456789 <br /> Banco del barrio
                 </p>
               }
             >
-              Para nosotros lo más importante es poder compartir con vos nuestro
-              gran día. Y si deseas ayudarnos con la Luna de Miel podés hacerlo
-              a la siguiente cuenta
+              Tu presencia es nuestro mejor regalo. Si deseas hacernos un
+              obsequio, agradeceríamos mucho tu contribución a nuestra vida
+              juntos. Por favor, considera transferir tu regalo a la siguiente
+              cuenta.
             </Card>
           </Col>
           <Col
