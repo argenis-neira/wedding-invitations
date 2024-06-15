@@ -122,9 +122,13 @@ const Home = () => {
           <Col></Col>
           <Col lg={8} md={8} sm={10} xs={10}>
             <div className="main-text">
-              El amor te da esa oportunidad de elegir, de sentirte viva, te da
-              esa seguridad y unas ganas de estar juntos siempre, de ver a esa
-              persona como si fuera el primer día y el último día de tu vida
+              ¡Mi amado es para mí y yo para él! “Grábame como un sello sobre tu
+              corazón, como un sello sobre tu brazo. Porque es fuerte el amor
+              como la muerte; y la pasión, tenaz como el infierno. Sus flechas
+              son dardos de fuego, como llama divina. No apagarán el amor ni lo
+              ahogarán océanos ni ríos”.
+              <br />
+              Cant 8: 6-7
             </div>
           </Col>
           <Col></Col>

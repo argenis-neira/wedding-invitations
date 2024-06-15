@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Rouge+Script&family=Sacramento&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap");
 
 .parallax {
   width: 10%;
@@ -232,7 +235,7 @@
   text-align: center;
   background-color: rgba(239, 255, 255, 0.589);
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8), -1px 0px 4px rgba(0, 0, 0, 0.4);
-  font-family: "Sacramento", cursive;
+  font-family: "Alex Brush", cursive;
   font-weight: 400;
   font-style: normal;
   opacity: 0;
@@ -299,6 +302,7 @@
   padding: 0.5em 0.5em;
   margin: 1rem 5rem;
   min-width: 15rem;
+  font-family: "Cinzel Decorative", serif;
   /* max-width: 25rem; */
 
   color: #605e5e;
@@ -343,7 +347,10 @@
 
 .card-info {
   text-align: center;
-  font-size: 18px;
+  font-size: 25px;
+  font-family: "Cormorant Upright", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 /* button start */
