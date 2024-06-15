@@ -6,6 +6,7 @@ import Timer from "../components/timer";
 import { useEffect, useState, useRef } from "react";
 import Card from "../components/card";
 import DressCard from "../components/dress-card";
+import SliderGallery from "../components/sliderGallery";
 
 const Home = () => {
   let flowerStyle = {
@@ -79,6 +80,7 @@ const Home = () => {
         Tu navegador no soporta la etiqueta de video.
       </video>
 
+      <SliderGallery></SliderGallery>
       <Container>
         <Row style={{ paddingTop: "10px" }}>
           <Reproductor />
