@@ -38,6 +38,7 @@ const Card = ({
             className="card-icon"
             alt={title}
             src={`/images/${iconFileName}.svg`}
+            loading="lazy"
           />
         </Row>
         <br />

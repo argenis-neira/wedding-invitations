@@ -72,6 +72,7 @@ const Home = () => {
           alt="Sea"
           className="background-video-first-loading"
           style={{ filter: "blur(5px)", scale: "1.05" }}
+          loading="lazy"
         />
       </div>
       <video autoPlay muted loop playsInline className="background-video">
@@ -94,6 +95,7 @@ const Home = () => {
               className="main-gif"
               src="/images/nombres-fecha.gif"
               alt="Christian y Mafer"
+              loading="lazy"
             />
           </Col>
           <Col></Col>
@@ -113,6 +115,7 @@ const Home = () => {
               className="main-image"
               src="/images/main-image.jpg"
               alt="Wedding"
+              loading="lazy"
             />
           </Col>
           <Col></Col>
@@ -122,11 +125,11 @@ const Home = () => {
           <Col></Col>
           <Col lg={8} md={8} sm={10} xs={10}>
             <div className="main-text">
-              ¡Mi amado es para mí y yo para él! “Grábame como un sello sobre tu
-              corazón, como un sello sobre tu brazo. Porque es fuerte el amor
-              como la muerte; y la pasión, tenaz como el infierno. Sus flechas
-              son dardos de fuego, como llama divina. No apagarán el amor ni lo
-              ahogarán océanos ni ríos”.
+              ¡Mi amado es para mí y yo para él! <br /> “Grábame como un sello
+              sobre tu corazón, como un sello sobre tu brazo. Porque es fuerte
+              el amor como la muerte; y la pasión, tenaz como el infierno. Sus
+              flechas son dardos de fuego, como llama divina. No apagarán el
+              amor ni lo ahogarán océanos ni ríos”.
               <br />
               Cant 8: 6-7
             </div>
@@ -156,7 +159,11 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <img alt="Padres Christian" src="images/padres-2.JPG" />
+            <img
+              alt="Padres Christian"
+              src="images/padres-2.JPG"
+              loading="lazy"
+            />
           </Col>
 
           <Col
@@ -169,7 +176,7 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <img alt="Padres Mafer" src="images/padres-1.JPG" />
+            <img alt="Padres Mafer" src="images/padres-1.JPG" loading="lazy" />
           </Col>
 
           <Col
@@ -239,6 +246,7 @@ const Home = () => {
               className="main-image"
               src="/images/boda-familia.png"
               alt="Family Wedding"
+              loading="lazy"
             />
           </Col>
           <Col></Col>
@@ -391,6 +399,7 @@ const Home = () => {
                     style={{ height: "100%", width: "100%" }}
                     alt="Itinerario"
                     src="/images/itinerario.png"
+                    loading="lazy"
                   />
                   <Row
                     style={{
@@ -451,7 +460,7 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <img alt="img_1" src="images/1.jpg" />
+            <img alt="img_1" src="images/1.jpg" loading="lazy" />
           </Col>
           <Col
             className={`order-2 order-md-2 img-rect box ${
@@ -463,7 +472,7 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <img alt="img_2" src="images/2.jpg" />
+            <img alt="img_2" src="images/2.jpg" loading="lazy" />
           </Col>
         </Row>
         <br />
@@ -478,7 +487,7 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <img alt="img_2" src="images/3.jpg" />
+            <img alt="img_2" src="images/3.jpg" loading="lazy" />
           </Col>
           <Col
             className={`order-3 order-md-4 img-oval box ${
@@ -490,12 +499,16 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <img alt="img_1" src="images/4.jpg" />
+            <img alt="img_1" src="images/4.jpg" loading="lazy" />
           </Col>
         </Row>
         <br />
         <Row
-          style={{ display: "flex", justifyContent: "center" }}
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            fontSize: "60px",
+          }}
           className="title"
         >
           ¡Te esperamos!

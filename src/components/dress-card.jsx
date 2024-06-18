@@ -18,6 +18,7 @@ const DressCard = ({ iconFileName, title, isVisible, children }) => {
             style={{ width: "250px", height: "180px", paddingLeft: "35px" }}
             alt={title}
             src={`/images/${iconFileName}.png`}
+            loading="lazy"
           />
         </Row>
         <Row
