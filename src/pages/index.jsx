@@ -192,7 +192,6 @@ const Home = () => {
             // sm={4}
             xs={12}
           >
-            {" "}
             <div className="box-info izq">
               Jorge Armangel Aguilar Crespo <br />&<br />
               Enriqueta Cecilia Coronel Sarmiento
@@ -276,6 +275,7 @@ const Home = () => {
             md={5}
             // sm={4}
             xs={8}
+            style={{ padding: "0 0" }}
           >
             <Card
               iconFileName={"iglesia"}
@@ -294,6 +294,7 @@ const Home = () => {
             md={5}
             // sm={4}
             xs={8}
+            style={{ padding: "0 0" }}
           >
             <Card
               iconFileName={"celebration"}
@@ -319,6 +320,7 @@ const Home = () => {
             md={5}
             // sm={4}
             xs={8}
+            style={{ padding: "0 0" }}
           >
             <Card
               iconFileName={"gift-icon"}
@@ -330,8 +332,17 @@ const Home = () => {
               popUpCont={
                 <p>
                   ¡Gracias por su amor y apoyo!
-                  <br /> Y los detalles de la Cuenta que aun no hay jaja <br />{" "}
-                  123456789 <br /> Banco del barrio
+                  <br />
+                  <br /> Aguilar Coronel Christian Andree
+                  <br />
+                  <br />
+                  Banco Guayaquil
+                  <br />
+                  Ahorro # 0033363308
+                  <br />
+                  chraagui1005@gmail.com
+                  <br />
+                  CI: 0704719087 <br />
                 </p>
               }
             >
@@ -346,6 +357,7 @@ const Home = () => {
             md={5}
             // sm={4}
             xs={8}
+            style={{ padding: "0 0" }}
           >
             <DressCard
               title="Código de Vestimenta"
@@ -366,6 +378,7 @@ const Home = () => {
             md={5}
             // sm={4}
             xs={8}
+            style={{ padding: "0 0" }}
           >
             <Card
               iconFileName={"checklist"}
@@ -385,6 +398,7 @@ const Home = () => {
             md={5}
             // sm={4}
             xs={8}
+            style={{ padding: "0 0" }}
           >
             <Card
               iconFileName={"schedule-icon"}
@@ -507,11 +521,14 @@ const Home = () => {
           style={{
             display: "flex",
             justifyContent: "center",
-            fontSize: "60px",
           }}
-          className="title"
+          className="handwriting-container"
         >
-          ¡Te esperamos!
+          <svg viewBox="0 0 300 150" class="handwriting">
+            <text x="10" y="70" class="text">
+              ¡Te esperamos!
+            </text>
+          </svg>
         </Row>
       </Container>
       <br />
@@ -519,7 +536,7 @@ const Home = () => {
         <Row style={{ "--bs-gutter-x": 0, width: "100%" }}>
           <Col></Col>
           <Col lg={8} md={8} sm={10} xs={10}>
-            Invitación digital creada por Carlos Neira{" "}
+            Invitación digital creada por Carlos Neira
           </Col>
           <Col></Col>
         </Row>

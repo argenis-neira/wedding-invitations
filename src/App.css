@@ -529,6 +529,38 @@
   cursor: pointer;
 }
 
+.handwriting-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.handwriting {
+  width: 500px;
+  height: 150px;
+}
+
+.text {
+  font-family: "Brush Script MT", cursive;
+  font-size: 60px;
+  fill: none;
+  stroke: white;
+  stroke-width: 2;
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+  animation: handwriting 4s forwards infinite;
+}
+
+@keyframes handwriting {
+  from {
+    stroke-dashoffset: 250;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
 @media (min-width: 576px) {
   .parallax {
     width: 15%;
