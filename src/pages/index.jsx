@@ -49,6 +49,56 @@ const Home = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src =
+      "https://rawcdn.githack.com/akzhy/Vara/02d135d2864a976f6c70464aebee0f81647695c8/src/vara.min.js";
+    script.async = false;
+
+    // Ejecutar la función cuando el script se haya cargado
+    script.onload = () => {
+      const startAnimation = () => {
+        const vara = new window.Vara(
+          "#container",
+          "https://rawcdn.githack.com/akzhy/Vara/ed6ab92fdf196596266ae76867c415fa659eb348/fonts/Satisfy/SatisfySL.json",
+          [
+            {
+              text: "Te esperamos!",
+              y: 20,
+              fromCurrentPosition: { y: true },
+              duration: 2000,
+            },
+          ],
+          {
+            strokeWidth: 2,
+            color: "#fff",
+            fontSize: 48,
+            textAlign: "center",
+          }
+        );
+
+        // Agregar el evento 'end' para reiniciar la animación
+        vara.animationEnd((i, o) => {
+          // Esperar un momento antes de reiniciar
+          setTimeout(() => {
+            document.getElementById("container").innerHTML = ""; // Limpiar el contenedor
+            startAnimation(); // Reiniciar la animación
+          }, 1000); // 1000 ms = 1 segundo de espera antes de reiniciar
+        });
+      };
+
+      // Iniciar la animación por primera vez
+      startAnimation();
+    };
+
+    document.body.appendChild(script);
+
+    // Limpieza: remover el script cuando el componente se desmonte
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <>
       <div
@@ -330,20 +380,44 @@ const Home = () => {
               isVisible={visibleBoxes.includes(6)}
               box={true}
               popUpCont={
-                <p>
-                  ¡Gracias por su amor y apoyo!
-                  <br />
-                  <br /> Aguilar Coronel Christian Andree
-                  <br />
-                  <br />
-                  Banco Guayaquil
-                  <br />
-                  Ahorro # 0033363308
-                  <br />
-                  chraagui1005@gmail.com
-                  <br />
-                  CI: 0704719087 <br />
-                </p>
+                <div className="p-box">
+                  <div id="ne" class="corner"></div>
+                  <div id="nw" class="corner"></div>
+                  <div id="se" class="corner"></div>
+                  <div id="sw" class="corner"></div>
+                  <img
+                    src="/images/stain.png"
+                    style={{
+                      position: "absolute",
+                      top: "-0.5rem",
+                      left: "-1rem",
+                      width: "105%",
+                      height: "110%",
+                    }}
+                    alt="Stain"
+                  ></img>
+                  <Container
+                    style={{
+                      zIndex: 2,
+                      position: "relative",
+                      paddingTop: "1rem",
+                    }}
+                  >
+                    <Row>¡Gracias por tu amor y apoyo!</Row>
+                    <Row className="fields">Carlos Neira</Row>
+                    <Row className="fields">Carlos Neira</Row>
+                    <Row className="fields">Carlos Neira</Row>
+                    <Row className="fields">Carlos Neira</Row>
+                    <Row>
+                      Agradecemos el envío de tu obsequio antes de:
+                      <br />
+                      26-Oct-2024
+                      <br />
+                      No olvides enviarnos tu comprobante a través del medio por
+                      el cual recibiste la invitación.
+                    </Row>
+                  </Container>
+                </div>
               }
             >
               Tu presencia es nuestro mejor regalo. Si deseas hacernos un
@@ -522,13 +596,8 @@ const Home = () => {
             display: "flex",
             justifyContent: "center",
           }}
-          className="handwriting-container"
         >
-          <svg viewBox="0 0 300 150" class="handwriting">
-            <text x="10" y="70" class="text">
-              ¡Te esperamos!
-            </text>
-          </svg>
+          <div id="container"></div>
         </Row>
       </Container>
       <br />
