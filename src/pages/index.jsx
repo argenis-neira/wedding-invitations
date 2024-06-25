@@ -381,10 +381,10 @@ const Home = () => {
               box={true}
               popUpCont={
                 <div className="p-box">
-                  <div id="ne" class="corner"></div>
-                  <div id="nw" class="corner"></div>
-                  <div id="se" class="corner"></div>
-                  <div id="sw" class="corner"></div>
+                  <div id="ne" className="corner"></div>
+                  <div id="nw" className="corner"></div>
+                  <div id="se" className="corner"></div>
+                  <div id="sw" className="corner"></div>
                   <img
                     src="/images/stain.png"
                     style={{
@@ -392,7 +392,7 @@ const Home = () => {
                       top: "-0.5rem",
                       left: "-1rem",
                       width: "105%",
-                      height: "110%",
+                      height: "100%",
                     }}
                     alt="Stain"
                   ></img>
@@ -403,12 +403,16 @@ const Home = () => {
                       paddingTop: "1rem",
                     }}
                   >
-                    <Row>¡Gracias por tu amor y apoyo!</Row>
-                    <Row className="fields">Carlos Neira</Row>
-                    <Row className="fields">Carlos Neira</Row>
-                    <Row className="fields">Carlos Neira</Row>
-                    <Row className="fields">Carlos Neira</Row>
-                    <Row>
+                    <Row className="style-script-regular">
+                      ¡Gracias por tu amor y apoyo!
+                    </Row>
+                    <Row className="fields">
+                      NOMBRE: AGUILAR CORONEL CHRISTIAN ANDREE
+                    </Row>
+                    <Row className="fields">#CUENTA AHORRO: 0033363308</Row>
+                    <Row className="fields">CORREO: chraagui1005@gmail.com</Row>
+                    <Row className="fields">C.I.: 0704719087</Row>
+                    <Row style={{ fontSize: "12px", padding: "12px" }}>
                       Agradecemos el envío de tu obsequio antes de:
                       <br />
                       26-Oct-2024
@@ -600,7 +604,6 @@ const Home = () => {
           <div id="container"></div>
         </Row>
       </Container>
-      <br />
       <div className="contact-section">
         <Row style={{ "--bs-gutter-x": 0, width: "100%" }}>
           <Col></Col>
