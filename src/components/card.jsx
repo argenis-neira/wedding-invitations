@@ -10,6 +10,7 @@ const Card = ({
   isVisible,
   box,
   popUpCont,
+  xl,
   children,
 }) => {
   //la clase "box" es para identificar todo aquello que necesita animacion al hacer scroll
@@ -87,9 +88,13 @@ const Card = ({
         // </div>
         <Row className="popup">
           <Col></Col>
-          <Col xl={4} lg={5} md={6} sm={8} xs={10}>
+          <Col xl={xl || 4} lg={5} md={6} sm={8} xs={10}>
             <div className="popup-content">
-              <span className="close" onClick={() => setOpenBox(false)}>
+              <span
+                style={{ zIndex: "2", position: "relative" }}
+                className="close"
+                onClick={() => setOpenBox(false)}
+              >
                 &times;
               </span>
               {popUpCont}

@@ -379,49 +379,98 @@ const Home = () => {
               href={""}
               isVisible={visibleBoxes.includes(6)}
               box={true}
+              xl={6}
               popUpCont={
-                <div className="p-box">
-                  <div id="ne" className="corner"></div>
-                  <div id="nw" className="corner"></div>
-                  <div id="se" className="corner"></div>
-                  <div id="sw" className="corner"></div>
+                <>
                   <img
-                    src="/images/stain.png"
+                    src="/images/esquina1.png"
                     style={{
                       position: "absolute",
-                      top: "-0.5rem",
-                      left: "-1rem",
-                      width: "105%",
-                      height: "100%",
+                      top: "0",
+                      left: "0",
+                      width: "75%",
+                      height: "auto",
+                      zIndex: "1",
                     }}
-                    alt="Stain"
+                    alt="Flowers"
                   ></img>
-                  <Container
+                  <img
+                    src="/images/esquina2.png"
                     style={{
-                      zIndex: 2,
-                      position: "relative",
-                      paddingTop: "1rem",
+                      position: "absolute",
+                      bottom: "0",
+                      right: "0",
+                      width: "75%",
+                      height: "auto",
+                      zIndex: "1",
                     }}
-                  >
-                    <Row className="style-script-regular">
-                      ¡Gracias por tu amor y apoyo!
-                    </Row>
-                    <Row className="fields">
-                      NOMBRE: AGUILAR CORONEL CHRISTIAN ANDREE
-                    </Row>
-                    <Row className="fields">#CUENTA AHORRO: 0033363308</Row>
-                    <Row className="fields">CORREO: chraagui1005@gmail.com</Row>
-                    <Row className="fields">C.I.: 0704719087</Row>
-                    <Row style={{ fontSize: "12px", padding: "12px" }}>
-                      Agradecemos el envío de tu obsequio antes de:
-                      <br />
-                      26-Oct-2024
-                      <br />
-                      No olvides enviarnos tu comprobante a través del medio por
-                      el cual recibiste la invitación.
-                    </Row>
-                  </Container>
-                </div>
+                    alt="Flowers"
+                  ></img>
+                  <div className="p-box">
+                    <div id="ne" className="corner"></div>
+                    <div id="nw" className="corner"></div>
+                    <div id="se" className="corner"></div>
+                    <div id="sw" className="corner"></div>
+                    <img
+                      src="/images/stain.png"
+                      style={{
+                        position: "absolute",
+                        top: "-0.5rem",
+                        left: "-1rem",
+                        width: "105%",
+                        height: "100%",
+                      }}
+                      alt="Stain"
+                    ></img>
+                    <Container
+                      style={{
+                        zIndex: 2,
+                        position: "relative",
+                        paddingTop: "1rem",
+                      }}
+                    >
+                      <Row className="dancing-script d-flex justify-content-center pb-4">
+                        ¡Gracias por tu amor y apoyo!
+                      </Row>
+                      <Row className="fields amatic">
+                        NOMBRE: AGUILAR CORONEL CHRISTIAN ANDREE
+                      </Row>
+                      <Row className="fields amatic">
+                        <Col className="cuenta-ahorro">#CUENTA AHORRO:</Col>
+                        <Col
+                          xs={12}
+                          // sm
+                          md={12}
+                          lg={12}
+                          xl={6}
+                          className="d-flex justify-content-center"
+                        >
+                          <div style={{ paddingRight: "10px" }}>0033363308</div>
+                          <div className="d-flex justify-content-center align-items-center">
+                            <img
+                              src="/images/banco-guayaquil.png"
+                              alt="logo banco"
+                              style={{ height: "25px", width: "auto" }}
+                            ></img>
+                          </div>
+                        </Col>
+                      </Row>
+                      <Row className="fields amatic">
+                        CORREO: chraagui1005@gmail.com
+                      </Row>
+                      <Row className="fields amatic">C.I.: 0704719087</Row>
+                      <Row className="d-flex justify-content-center amatic nota">
+                        Agradecemos el envío de tu obsequio antes de:
+                        <br />
+                        26-Oct-2024
+                        <br />
+                        No olvides enviarnos tu comprobante
+                        <br />a través del medio por el cual recibiste la
+                        invitación.
+                      </Row>
+                    </Container>
+                  </div>
+                </>
               }
             >
               Tu presencia es nuestro mejor regalo. Si deseas hacernos un
