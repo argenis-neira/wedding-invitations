@@ -492,6 +492,13 @@ const Home = () => {
               iconFileName={"dress-code"}
             >
               ELEGANTE
+              <br />
+              ¡Queridas invitadas!
+              <br />
+              Por favor, reserven el blanco para la novia. 🎉👰
+              <br />
+              ¡Nos encantará verlas brillar en todos los demás colores del
+              arcoíris!
             </DressCard>
           </Col>
         </Row>
