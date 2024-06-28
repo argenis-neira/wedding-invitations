@@ -436,14 +436,16 @@ const Home = () => {
                         NOMBRE: AGUILAR CORONEL CHRISTIAN ANDREE
                       </Row>
                       <Row className="fields amatic">
-                        <Col className="cuenta-ahorro">#CUENTA AHORRO:</Col>
+                        <Col className="cuenta-ahorro text-xl-end">
+                          #CUENTA AHORRO:
+                        </Col>
                         <Col
                           xs={12}
                           // sm
                           md={12}
                           lg={12}
                           xl={6}
-                          className="d-flex justify-content-center"
+                          className="d-flex justify-content-center justify-content-xl-start"
                         >
                           <div style={{ paddingRight: "10px" }}>0033363308</div>
                           <div className="d-flex justify-content-center align-items-center">
@@ -495,10 +497,9 @@ const Home = () => {
               <br />
               ¡Queridas invitadas!
               <br />
-              Por favor, reserven el blanco para la novia. 🎉👰
-              <br />
-              ¡Nos encantará verlas brillar en todos los demás colores del
-              arcoíris!
+              Por favor, reserven el blanco para la novia. 👰🏻‍♀
+              <br /> ¡Nos encantará verlas brillar en todos los demás colores
+              del arcoíris! ✨
             </DressCard>
           </Col>
         </Row>

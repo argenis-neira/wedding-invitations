@@ -310,6 +310,7 @@
 .box-info {
   display: flex;
   align-items: center;
+  justify-content: center;
   border-radius: 10px;
   box-shadow: 0px 0px 0px 2px rgba(253, 217, 203, 1),
     8px 8px 0px 0px rgba(253, 217, 203, 1);
@@ -430,16 +431,16 @@
   right: 66%;
 }
 .right::after {
-  top: -5px;
-  left: calc(-66% - 45px);
+  top: -8px;
+  left: calc(-66% - 90px);
 
   background-color: #bedcc1;
   color: transparent;
   transition: transform 0.4s ease-out;
   transform: translate(0, -90%) rotate(0deg);
 
-  width: 130%;
-  height: 130%;
+  width: 140%;
+  height: 140%;
 }
 
 .button:hover .right::after {
