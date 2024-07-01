@@ -88,7 +88,7 @@ const Card = ({
         // </div>
         <Row className="popup">
           <Col></Col>
-          <Col xl={xl || 4} lg={5} md={6} sm={8} xs={10}>
+          <Col xl={xl || 4} lg={5} md={6} sm={8} xs={12}>
             <div className="popup-content">
               <span
                 style={{ zIndex: "2", position: "relative" }}

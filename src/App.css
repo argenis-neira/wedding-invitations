@@ -11,7 +11,7 @@
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: normal;
-  font-size: 40px;
+  font-size: 35px;
 }
 .amatic {
   font-family: "Amatic SC", sans-serif;
@@ -613,7 +613,7 @@
 }
 
 .nota {
-  font-size: 20px;
+  font-size: 15px;
   padding: 12px;
 }
 
@@ -632,6 +632,9 @@
   }
   .main-text {
     font-size: 30px;
+  }
+  .nota {
+    font-size: 18px;
   }
 }
 
