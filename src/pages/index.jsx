@@ -129,7 +129,10 @@ const Home = () => {
         <source src="/videos/sea.mp4" type="video/mp4" />
         Tu navegador no soporta la etiqueta de video.
       </video>
-
+      <div style={{ display: "none" }}>
+        <div className="amatic">c</div>
+        <div className="dancing-script">m</div>
+      </div>
       <Container>
         <Row style={{ paddingTop: "10px" }}>
           <Reproductor />
