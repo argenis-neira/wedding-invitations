@@ -86,7 +86,7 @@ const Timer = () => {
     }
 
     // var deadline = new Date(Date.parse(new Date()) + 12 * 24 * 60 * 60 * 1000);
-    let deadline = new Date("2024-10-26T15:00:00");
+    let deadline = new Date("2025-10-26T15:00:00");
     new Clock(deadline);
   }, []);
 

@@ -212,11 +212,7 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <img
-              alt="Padres Christian"
-              src="images/padres-2.JPG"
-              loading="lazy"
-            />
+            <img alt="Padres" src="images/padres-2.JPG" loading="lazy" />
           </Col>
 
           <Col
@@ -229,7 +225,7 @@ const Home = () => {
             // sm={4}
             xs={8}
           >
-            <img alt="Padres Mafer" src="images/padres-1.JPG" loading="lazy" />
+            <img alt="Padres 2" src="images/padres-1.JPG" loading="lazy" />
           </Col>
 
           <Col
@@ -246,8 +242,8 @@ const Home = () => {
             xs={12}
           >
             <div className="box-info izq">
-              Jorge Armangel Aguilar Crespo <br />&<br />
-              Enriqueta Cecilia Coronel Sarmiento
+              Carlos Carlos Apellido Apellido <br />&<br />
+              Nombre Madre Apellido Apellido
             </div>
           </Col>
           <Col
@@ -264,10 +260,10 @@ const Home = () => {
             xs={12}
           >
             <div className="box-info der">
-              Alfredo Yasig Curicho
+              Nombre Apellido Apellido
               <br />
               &<br />
-              Patricia Janett Tulcanaza Franco
+              Nombre Nombre Apellido Apellido
             </div>
           </Col>
         </Row>
@@ -436,7 +432,7 @@ const Home = () => {
                         ¡Gracias por tu amor y apoyo!
                       </Row>
                       <Row className="fields amatic">
-                        NOMBRE: AGUILAR CORONEL CHRISTIAN ANDREE
+                        NOMBRE: GARCIA GARCIA ROBERTO ROBERTO
                       </Row>
                       <Row className="fields amatic">
                         <Col className="cuenta-ahorro text-xl-end">
@@ -450,7 +446,7 @@ const Home = () => {
                           xl={6}
                           className="d-flex justify-content-center justify-content-xl-start"
                         >
-                          <div style={{ paddingRight: "10px" }}>0033363308</div>
+                          <div style={{ paddingRight: "10px" }}>123456789</div>
                           <div className="d-flex justify-content-center align-items-center">
                             <img
                               src="/images/banco-guayaquil.png"
@@ -461,9 +457,9 @@ const Home = () => {
                         </Col>
                       </Row>
                       <Row className="fields amatic">
-                        CORREO: chraagui1005@gmail.com
+                        CORREO: username@gmail.com
                       </Row>
-                      <Row className="fields amatic">C.I.: 0704719087</Row>
+                      <Row className="fields amatic">C.I.: 09845365841</Row>
                       <Row className="d-flex justify-content-center amatic nota">
                         Agradecemos el envío de tu obsequio antes de:
                         <br />
@@ -522,9 +518,7 @@ const Home = () => {
               iconFileName={"checklist"}
               title={"Confirmación de asistencia"}
               buttonText={"CONFIRMA AQUÍ"}
-              href={
-                "https://docs.google.com/forms/d/e/1FAIpQLSctBffRDX1F3IsH9Ou5ragsUvXkn_r3FpC6qTRgy2zRy2Itzg/viewform"
-              }
+              href={"https://www.google.com.ec"}
               isVisible={visibleBoxes.includes(8)}
             >
               Para nosotros es muy importante que confirmes esta invitación, o
